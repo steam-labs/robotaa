@@ -8,28 +8,25 @@
           </block>
         </value>
         <next>
-          <block type="movement_stop" id="20">
-            <next>
-              <block type="controls_repeat" id="52" inline="true">
-                <value name="TIMES">
-                  <block type="math_number" id="98">
-                    <field name="NUM">9001</field>
-                  </block>
-                </value>
-                <statement name="DO">
-                  <block type="oled_drawnumber" id="91" inline="true">
-                    <value name="NUMBER">
-                      <block type="sensor_spectrometer" id="45">
-                        <field name="LIGHT">RED</field>
-                      </block>
-                    </value>
-                  </block>
-                </statement>
-              </block>
-            </next>
-          </block>
+          <block type="movement_stop" id="20"></block>
         </next>
       </block>
     </next>
+  </block>
+  <block type="controls_repeat" id="52" inline="true" x="256" y="392">
+    <value name="TIMES">
+      <block type="math_number" id="98">
+        <field name="NUM">9001</field>
+      </block>
+    </value>
+    <statement name="DO">
+      <block type="oled_drawnumber" id="91" inline="true">
+        <value name="NUMBER">
+          <block type="sensor_spectrometer" id="45">
+            <field name="LIGHT">RED</field>
+          </block>
+        </value>
+      </block>
+    </statement>
   </block>
 </xml>
